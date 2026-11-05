@@ -834,3 +834,103 @@ body {
     font-size: 15px;
   }
 }
+
+/* =========================
+   RESPONSIVE FIXES
+========================= */
+
+/* Tablet */
+@media (max-width: 800px) {
+  .home-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .home-skill-card {
+    width: 100%;
+    min-width: 0;
+    padding: 20px;
+  }
+
+  .tags {
+    gap: 8px;
+  }
+
+  .tags span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Prevent horizontal overflow */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+.section-wrap,
+.page,
+.hero,
+.about-grid,
+.contact-content,
+.home-skills-grid,
+.projects-grid {
+  min-width: 0;
+}
+
+.home-skill-card,
+.project-card,
+.experience-card {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    gap: 35px;
+  }
+
+  .hero-visual {
+    height: 390px;
+    margin-top: 10px;
+  }
+
+  .profile-card {
+    width: 90%;
+    transform: rotate(1deg);
+  }
+
+  .orbit {
+    width: 280px;
+    height: 280px;
+  }
+
+  .orbit-two {
+    width: 320px;
+    height: 320px;
+  }
+
+  .sticker-one {
+    right: 0;
+    top: 15px;
+  }
+
+  .sticker-two {
+    left: 0;
+    bottom: 25px;
+  }
+}
