@@ -6,7 +6,7 @@ export const profile = {
   email: 'manshikandu@gmail.com',
   linkedin: 'https://linkedin.com/in/manshi-kandu',
   github: 'https://github.com/Manshikandu',
-  cv: '/Manshi_Kandu_CV.pdf',
+  cv: '/Manshi_Kandu_Resume.pdf',
   intro: 'I explore real product workflows, investigate unexpected behavior, and help create reliable software. My focus is QA engineering, with growing interests in automation and full-stack development.',
   about: 'I am a Junior QA Engineer with hands-on experience testing web-based and SaaS products. My work spans functional, UI, regression, API, performance, and end-to-end testing. I enjoy understanding product workflows, investigating unexpected behavior, writing clear, reproducible bug reports, and collaborating with developers to improve product quality. Alongside QA, my BSc. CSIT background and exposure to React, Node.js, Express.js, JavaScript, and databases help me understand how web applications are built.',
   focus: [

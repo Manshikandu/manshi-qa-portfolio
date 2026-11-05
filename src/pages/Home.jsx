@@ -44,7 +44,7 @@ function Home() {
 
             <a
               className="button secondary"
-              href={profile.cv}
+              href="Manshi_Kandu_Resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
