@@ -24,14 +24,16 @@ export const education = [
   degree: 'Bachelor of Science in Computer Science and Information Technology (BSc. CSIT)',
   college: 'Sagarmatha College of Science and Technology',
   period: '2021 – 2026',
-  location: 'Kathmandu, Nepal'
+  location: 'Kathmandu, Nepal',
+  mark: 'BSc. CSIT'
 },
 {
    
     degree: 'Higher Secondary Education (+2)',
     college: 'Tilottama Secondary School',
     period: '2020 - 2021',
-    location: 'Butwal, Nepal'
+    location: 'Butwal, Nepal',
+    mark: '+2'
   
 }
 

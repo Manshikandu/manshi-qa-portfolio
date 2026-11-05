@@ -93,25 +93,25 @@ function About() {
           text="My academic background in computer science supports my understanding of software systems and application development."
         />
 
-        <article className="education-card">
-          <div className="education-icon"><GraduationCap size={24} /></div>
-          <div>
-            <span className="eyebrow">{education.period}</span>
-            <h3>{education.degree}</h3>
-            <p>{education.college} · {education.location}</p>
-          </div>
-          <span className="education-mark">BSc. CSIT</span>
-        </article>
+      
+      <div className="education-list">
+        {education.map((item) => (
+          <article className="education-card" key={item.level || item.mark}>
+            <div className="education-icon">
+              <GraduationCap size={24} />
+            </div>
 
-         <article className="education-card">
-          <div className="education-icon"><GraduationCap size={24} /></div>
-          <div>
-            <span className="eyebrow">{education.period}</span>
-            <h3>{education.degree}</h3>
-            <p>{education.college} · {education.location}</p>
-          </div>
-          <span className="education-mark">BSc. CSIT</span>
-        </article>
+            <div className="education-info">
+              <span className="eyebrow">{item.period}</span>
+              <h3>{item.degree}</h3>
+              <p>{item.college} · {item.location}</p>
+            </div>
+
+            <span className="education-mark">{item.mark}</span>
+          </article>
+        ))}
+      </div>
+
       </section>
     </div>
   )
