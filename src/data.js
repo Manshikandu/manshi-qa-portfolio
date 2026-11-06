@@ -132,39 +132,28 @@ export const projects = [
   {
     slug: 'getdesk',
     name: 'GetDesk',
-    type: 'Cloud-Based Contact Centre Platform',
+    type: 'Cloud-Based Call Centre Platform',
     tags: ['Functional Testing', 'Exploratory Testing', 'Regression Testing', 'Defect Investigation'],
     summary: 'QA testing of a web-based contact centre platform, focusing on end-to-end workflows, system behavior, and reporting accuracy.',
-    overview: 'GetDesk is a web-based contact centre platform that brings together call handling, agent management, outbound campaigns, contact groups, dashboards, and reporting workflows.',
+    overview: 'GetDesk is a cloud-based contact-centre platform designed to manage inbound and outbound business calls. It provides real-time agent monitoring, call analytics, call handling, ticket management, and reporting to help businesses manage their customer communication and operational workflows.',
     scope: [
       'Tested end-to-end workflows across call handling and agent management.',
-      'Validated outbound campaigns and contact group functionality.',
-      'Checked dashboard statistics and reporting behavior.',
-      'Performed regression testing after feature changes and defect fixes.'
+      'Admin Dashboard & Call Analytics: Validated dashboard information, call statistics, analytics, and reporting behavior.',
+      'Call Management: Tested inbound and outbound call-related workflows and call handling.',
+      'Wrap-up Management: Tested post-call wrap-up functionality and related agent workflows.',
+      'Escalation Process: Validated escalation workflows and how issues or calls move through the escalation process.'
     ],
     challenges: [
-      'Investigated HTTP 500 errors during application workflows.',
-      'Investigated outbound campaign execution failures.',
-      'Identified mismatches between dashboard call counts and Call Detail Report data, including differences related to answer dispositions.'
+      "Encountered HTTP 500 errors during Excel contact uploads and dashboard detail exports.",
+      "Identified unexpected ticket generation for answered calls, despite ticket creation being intended only for missed and unanswered calls.",
+      "Investigated mismatches between dashboard call counts and Call Detail Reports through manual data comparison.",
+      "Identified incorrect answered statuses for calls that were not picked up across inbound and outbound workflows.",
+      "Validated role-specific permissions by switching between Super Admin, Supervisor, and Agent accounts.",
+      "Cross-checked call recordings, call logs, call durations, and timeline events to verify data consistency."
     ],
     contribution: 'Executed functional, exploratory, and regression testing across key modules. Investigated unexpected behavior, documented reproducible defects, and worked with developers during defect verification.'
   },
-  {
-    slug: 'ringgaze-buel-pbx',
-    name: 'RingGaze & Buel PBX',
-    type: 'VoIP Products',
-    tags: ['Manual QA', 'API Testing', 'JMeter', 'Regression'],
-    summary: 'Testing VoIP product workflows, application behavior, API functionality, and performance under defined test conditions.',
-    overview: 'A collection of VoIP product workflows where reliable call behavior, application functionality, and service performance are important.',
-    scope: [
-      'Performed functional testing of core VoIP workflows.',
-      'Validated API behavior using Postman and Swagger.',
-      'Performed regression testing after changes.',
-      'Used Apache JMeter to evaluate performance and load behavior under defined conditions.'
-    ],
-    challenges: [],
-    contribution: 'Performed manual, API, and regression testing and used JMeter to assess performance and response behavior.'
-  },
+  
   {
     slug: 'buel-bucket',
     name: 'Buel Bucket',
@@ -180,6 +169,22 @@ export const projects = [
     ],
     challenges: [],
     contribution: 'Worked on manual and automated testing, building Playwright coverage for key workflows and supporting regression verification.'
+  },
+  {
+    slug: 'ringaze-buel-pbx',
+    name: 'Ringaze & Buel PBX',
+    type: 'VoIP Products',
+    tags: ['Manual QA', 'API Testing', 'JMeter', 'Regression'],
+    summary: 'Testing VoIP product workflows, application behavior, API functionality, and performance under defined test conditions.',
+    overview: 'A collection of VoIP product workflows where reliable call behavior, application functionality, and service performance are important.',
+    scope: [
+      'Performed functional testing of core VoIP workflows.',
+      'Validated API behavior using Postman and Swagger.',
+      'Performed regression testing after changes.',
+      'Used Apache JMeter to evaluate performance and load behavior under defined conditions.'
+    ],
+    challenges: [],
+    contribution: 'Performed manual, API, and regression testing and used JMeter to assess performance and response behavior.'
   },
   {
     slug: 'crm-web-application',

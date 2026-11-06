@@ -2,6 +2,7 @@ import { profile, skillGroups, education } from '../data'
 import SectionHeading from '../components/SectionHeading'
 import { Code2, Lightbulb, Search, GraduationCap } from 'lucide-react'
 
+
 function About() {
   const principles = [
     {

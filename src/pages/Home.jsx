@@ -4,12 +4,13 @@ import { profile, projects } from '../data'
 import ProfileCard from '../components/ProfileCard'
 import ProjectCard from '../components/ProjectCard'
 import SectionHeading from '../components/SectionHeading'
+import ContactSection from '../components/contactSection'
 
 import { skillGroups } from '../data'
 import { Code2 } from 'lucide-react'
 
 function Home() {
-  const featuredProjects = projects.slice(0, 3)
+  const featuredProjects = projects.slice(0, 2)
 
   return (
     <>
@@ -32,7 +33,7 @@ function Home() {
           </h2>
 
           <div className="hero-role">
-            QA ENGINEERING <span>✳</span> TEST AUTOMATION <span>✳</span> WEB TECHNOLOGIES
+            QA ENGINEERING <span>✳</span> API TESTING <span>✳</span> TEST AUTOMATION
           </div>
 
           <p className="hero-intro">{profile.intro}</p>
@@ -44,7 +45,7 @@ function Home() {
 
             <a
               className="button secondary"
-              href="Manshi_Kandu_Resume.pdf"
+              href="/Manshi_Kandu_Resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
@@ -116,67 +117,10 @@ function Home() {
             Explore all projects <ArrowUpRight size={20} />
           </Link>
         </div>
+        
       </section>
-
-     <section className="contact-section">
-  <div className="contact-content">
-    <div className="contact-text">
-      <span className="eyebrow">LET'S CONNECT</span>
-
-      <h2>Good software starts with thoughtful testing.</h2>
-
-      <p>
-        Interested in working together or discussing quality engineering?
-      </p>
-    </div>
-
-      <div className="contact-links">
-  {[
-    {
-      label: 'EMAIL ME',
-      value: profile.email,
-      href: `mailto:${profile.email}`,
-      icon: Mail
-    },
-    {
-      label: 'CONNECT ON',
-      value: 'LinkedIn',
-      href: profile.linkedin,
-      icon: Linkedin
-    },
-    {
-      label: 'EXPLORE MY CODE',
-      value: 'GitHub',
-      href: profile.github,
-      icon: Github
-    }
-  ].map((contact) => {
-    const Icon = contact.icon
-
-    return (
-      <a
-        className="contact-link"
-        key={contact.label}
-        href={contact.href}
-        target={contact.href.startsWith('mailto:') ? undefined : '_blank'}
-        rel="noreferrer"
-      >
-        <span className="contact-icon">
-          <Icon size={20} />
-        </span>
-
-        <span>
-          <small>{contact.label}</small>
-          <strong>{contact.value}</strong>
-        </span>
-
-        <ArrowUpRight size={17} />
-      </a>
-    )
-  })}
-    </div>
-  </div>
-</section>
+       <ContactSection />
+    
     </>
   )
 }
