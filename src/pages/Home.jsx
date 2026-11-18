@@ -4,7 +4,7 @@ import { profile, projects } from '../data'
 import ProfileCard from '../components/ProfileCard'
 import ProjectCard from '../components/ProjectCard'
 import SectionHeading from '../components/SectionHeading'
-import ContactSection from '../components/contactSection'
+
 
 import { skillGroups } from '../data'
 import { Code2 } from 'lucide-react'
@@ -119,7 +119,7 @@ function Home() {
         </div>
         
       </section>
-       <ContactSection />
+       
     
     </>
   )
