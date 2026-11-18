@@ -4,6 +4,7 @@ import { profile, projects } from '../data'
 import ProfileCard from '../components/ProfileCard'
 import ProjectCard from '../components/ProjectCard'
 import SectionHeading from '../components/SectionHeading'
+import ContactSection from '../components/ContactSection'
 
 
 import { skillGroups } from '../data'
@@ -120,7 +121,7 @@ function Home() {
         
       </section>
        
-    
+    <ContactSection />
     </>
   )
 }
